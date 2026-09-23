@@ -15,15 +15,15 @@ Built using pure web fundamentals (**HTML5, CSS3, and Vanilla JavaScript**), thi
 
 ## 📁 Project Structure
 
-College Management/
-Images/
-├── index.html
-├── departments.html
-├── faculty.html
-├── students.html
-├── success.html
-├── style.css
-└── script.js
+College Management/  
+Images/  
+├── index.html  
+├── departments.html  
+├── faculty.html  
+├── students.html  
+├── success.html  
+├── style.css  
+└── script.js  
 
 ## 🛠️ Built With
 
