@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/logo.jfif" alt="ASCT College">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="students.html" class="active">Students</a>
+        </div>
+    </nav>
+
+    <div class="form-page">
+        <div class="form-box">
+            <h2>Student Registration</h2>
+            <p>Fill in your details to register for academic session 2027-28</p>
+            <form id="regForm">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="number" id="mobile" placeholder="Mobile Number" required>
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option>B.A. - History (Hons.)</option>
+                    <option>B.Tech CSE</option>
+                    <option>BCA</option>
+                    <option>MBA</option>
+                </select>
+                <select id="sem" required>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </select>
+                <input type="text" id="aadhar" placeholder="Aadhar Number" required>
+                <label><input type="checkbox" required> I confirm details are correct</label>
+                <button type="submit" class="btn-blue full">Register Now</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

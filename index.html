@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASCT College | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/logo.jfif" alt="ASCT College">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="departments.html">departments</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="students.html">Students</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-right">
+            <input type="text" id="globalSearch" placeholder="Search...">
+            <button class="btn-blue" onclick="openLogin()">Login</button>
+            <a href="students.html" class="btn-blue">Apply Now</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to All Saints' College of Technology</h1>
+        <p>Established 2002 • RGPV University • NAAC Accredited</p>
+
+        <div class="hero-btns">
+            <a href="departments.html"><button class="btn-blue">Explore Departments</button></a>
+            <a href="faculty.html"><button class="btn-white">Meet Faculty</button></a>
+        </div>
+
+        <div class="stats">
+            <span>5000+ Students</span>
+            <span>50+ Faculty</span>
+            <span>6 Departments</span>
+        </div>
+    </section>
+
+    <section class="section" id="events">
+        <h2>College Events</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Tech Fest 2026</h3>
+                <p>25th Sept - Innovation Contest</p>
+                <button onclick="showEvent('Tech Fest details...')">View Details</button>
+            </div>
+            <div class="card">
+                <h3>Placement Drive</h3>
+                <p>28th Sept - TCS, Infosys</p><button onclick="showEvent('Placement details...')">View Details</button>
+            </div>
+            <div class="card">
+                <h3>Sports Week</h3>
+                <p>2nd Oct - Tournament</p><button onclick="showEvent('Sports details...')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: asctcollege@gmail.com | Phone: +91 9303099961</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14657.686215880847!2d77.32975777360613!3d23.300459063671134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c67e3db5fe3e3%3A0xe07da674ecc374c!2sAll%20Saints'%20College%20Of%20Technology!5e0!3m2!1sen!2sin!4v1790148980359!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="loginEmail" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class="btn-blue" onclick="doLogin()">Login</button>
+            <p>Don't have account? <a href="students.html">Register Now</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

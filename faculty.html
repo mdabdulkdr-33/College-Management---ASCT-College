@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/logo.jfif" alt="ASCT College">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="departments.html">Departments</a>
+            <a href="faculty.html" class="active">Faculty</a>
+            <a href="students.html">Students</a>
+        </div>
+        <a href="students.html" class="btn-blue">Apply Now</a>
+    </nav>
+    <div class="section">
+        <h1>Faculty & Staff</h1>
+        <input type="text" id="facultySearch" placeholder="Search faculty, subject..." onkeyup="searchFaculty()">
+        <div class="cards" id="facultyList"></div>
+    </div>
+    <div id="facModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('facModal')">&times;</span>
+            <h2 id="fName"></h2>
+            <p id="fDept"></p>
+            <p id="fEmail"></p>
+            <button class="btn-white" onclick="downloadProfile()">Download Profile</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

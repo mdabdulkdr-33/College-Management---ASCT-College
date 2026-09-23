@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="success-page">
+        <div class="success-card">
+            <h1>REGISTRATION SUCCESS</h1>
+            <div class="tick">✓</div>
+            <h2 style="color:green;">Successfully Registered!</h2>
+            <p>Your registration is complete. Welcome to All Saints' College of Technology</p>
+            <div class="details" id="successDetails"></div>
+            <p style="background:#e8f5e9; padding:10px; border-radius:8px;">A confirmation email has been sent to your email</p>
+
+            <div class="success-btns">
+                <button class="btn-white" onclick="downloadReceipt()">⬇ Download Receipt</button>
+                <button class="btn-green" onclick="location.href='index.html'">→ Go to Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>loadSuccess();</script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Departments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Images/logo.jfif" alt="ASCT College">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="departments.html" class="active">Departments</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="students.html">Students</a>
+        </div>
+        <a href="students.html" class="btn-blue">Apply Now</a>
+    </nav>
+
+    <div class="section">
+        <h1>College Departments</h1>
+        <p>Explore our six academic departments</p>
+        <input type="text" id="deptSearch" placeholder="Search departments..." onkeyup="searchDept()">
+        <div class="filters">
+            <button onclick="filterDept('All')">All</button>
+            <button onclick="filterDept('Engineering')">Engineering</button>
+            <button onclick="filterDept('Management')">Management</button>
+        </div>
+        <div class="cards" id="deptList">
+            <div class="card" data-type="Engineering">
+                <h3>CSE</h3>
+                <p>Computer Science & Engg</p>
+                <small>B.Tech • 120 Seats • 4 Years</small>
+                <br>
+                <button onclick="viewDept('CSE - AI, Data Science, Software Dev')">View Details →</button>
+            </div>
+            <div class="card" data-type="Engineering">
+                <h3>ECE</h3>
+                <p>Electronics & Communication</p>
+                <small>B.Tech • 60 Seats</small>
+                <br>
+                <button onclick="viewDept('ECE - VLSI, IoT')">View Details →</button>
+            </div>
+            <div class="card" data-type="Engineering">
+                <h3>Mechanical</h3>
+                <p>Mechanical Engineering</p>
+                <small>B.Tech • 60 Seats</small>
+                <br>
+                <button onclick="viewDept('Mechanical - Thermodynamics')">View Details →</button>
+            </div>
+            <div class="card" data-type="Engineering">
+                <h3>Civil</h3>
+                <p>Civil Engineering</p>
+                <small>B.Tech • 60 Seats</small>
+                <br>
+                <button onclick="viewDept('Civil - Structural')">View Details →</button>
+            </div>
+            <div class="card" data-type="Management">
+                <h3>MBA</h3>
+                <p>Master of Business Admin</p>
+                <small>PG • 40 Seats • 2 Years</small>
+                <br>
+                <button onclick="viewDept('MBA - Finance, Marketing')">View Details →</button>
+            </div>
+            <div class="card" data-type="Management">
+                <h3>BCA</h3>
+                <p>Computer Applications</p>
+                <small>UG • 30 Seats • 3 Years</small>
+                <br>
+                <button onclick="viewDept('BCA - Programming, Web Dev')">View Details →</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="deptModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('deptModal')">&times;</span>
+            <h2 id="deptTitle"></h2>
+            <p id="deptDesc"></p>
+            <button class="btn-blue" onclick="location.href='students.html'">Apply Now</button>
+            <button class="btn-white" onclick="downloadDept()">Download Brochure</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
